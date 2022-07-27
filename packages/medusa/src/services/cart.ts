@@ -473,7 +473,7 @@ class CartService extends TransactionBaseService<CartService> {
     if (salesChannel.is_disabled) {
       throw new MedusaError(
         MedusaError.Types.INVALID_DATA,
-        `Unable to create Cart with disabled Sales Channel "${salesChannel.name}"`
+        `Unable to assign the cart to a disabled Sales Channel "${salesChannel.name}"`
       )
     }
 
